@@ -12,3 +12,12 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.listen(PORT, () => {
     console.log(`Server currently listening on port ${PORT}`);
 });
+
+//masuk ke halaman home pertamanya
+app.get('/views/login', (req,res) =>{
+    res.send("Masuk halaman login");
+})
+
+app.post('/', (req,res) =>{
+
+})
